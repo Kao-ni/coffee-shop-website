@@ -20,16 +20,9 @@ It’s built entirely with front-end technologies and is perfect for practicing 
 
 ---
 
-## 📸 Preview
-
-![Website Preview](images/coffee-hero-section.png)
-
----
-
 ## 🚀 Live Demo
 
-**[👉 View the live website](https://kao-ni.github.io/coffee-shop-website/)**  
-*(You can deploy it easily using GitHub Pages)*
+**[👉 View the live website](https://kaos-coffee-website.neocities.org/)**  
 
 ---
 
