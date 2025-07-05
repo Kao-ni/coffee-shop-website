@@ -586,6 +586,7 @@ header .navbar{
     position: absolute;
     right: 30px;
     top: 30px;
+    color: var(--dark-color) !important;
   }
 
   .navbar #menu-open-button {
@@ -702,4 +703,66 @@ header .navbar{
     display: block;
     margin: 0 auto;
   }
+}
+
+/* Popup section styling */
+
+/* Popup styles */
+
+#image-popup {
+  z-index: 999;
+}
+
+#image-popup .popup-overlay {
+  z-index: 1;
+}
+
+#image-popup img {
+  z-index: 2;
+  position: relative;
+}
+
+#image-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#image-popup.popup-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+#image-popup .popup-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+#image-popup.popup-visible .popup-overlay {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+#image-popup img {
+  position: relative;
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 10px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
 }
